@@ -1,0 +1,35 @@
+{
+  "name": "SitemapOnTheFly",
+  "version": "1.0.0",
+  "author": [
+    "Telepedia Ltd."
+  ],
+  "url": "https://github.com/telepedia/SitemapOnTheFly",
+  "description": "Generate sitemaps on the fly",
+  "license-name": "Apache-2.0",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.43.0",
+    "platform": {
+      "php": ">= 8.0"
+    }
+  },
+  "AutoloadNamespaces": {
+    "Telepedia\\Extensions\\SitemapOnTheFly\\": "includes"
+  },
+  "MessagesDirs": {
+    "SitemapOnTheFly": [
+      "i18n"
+    ]
+  },
+  "config": {
+    "SitemapNamespaces": {
+      "value": [],
+      "description": "Array. Namespaces to which sitemaps should be generated for."
+    }
+  },
+  "ConfigRegistry": {
+    "SitemapOnTheFly": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
+  },
+  "manifest_version": 2
+}
